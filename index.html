@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapp">
+            <section class="post">
+                <header class="head">Create Post</header>
+                <form action="#">
+                    <div class="content">
+                        <img src="./image/profile.png" alt="">
+                        <div class="details">
+                            <p class="name"> &nbsp; Abdul Rafay</p>
+                            <div class="privacy">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Friends</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea placeholder="What's on your mind, Abdul?"  required></textarea>
+                    <div class="emoji">
+                        <img onclick="randomColor()" id="emoji" src="./image/theme.png" alt="">
+                        <img  src="./image/emoji.png" alt="">
+                    </div>
+                    <div class="options">
+                        <p>Add to your post</p>
+                        <div class="option">
+                            <ul class="list">
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png" alt=""> </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/b37mHA1PjfK.png" alt=""> </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png" alt=""> </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8zlaieBcZ72.png" alt=""> </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/q7MiRkL7MLC.png" alt=""> </li>
+                                <li> <img height="22px"  src="./image/more.png" alt=""> </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <button class="buttton" >Post</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
