@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="wrapp">
             <section class="post">
                 <header class="head">Create Post</header>
@@ -27,26 +27,68 @@
                             </div>
                         </div>
                     </div>
-                    <textarea placeholder="What's on your mind, Abdul?"  required></textarea>
+                    <textarea id="textarea" placeholder="What's on your mind, Abdul?" required></textarea>
                     <div class="emoji">
-                        <img onclick="randomColor()" id="emoji" src="./image/theme.png" alt="">
-                        <img  src="./image/emoji.png" alt="">
+                        <img onclick="anyColor()" id="emoji" src="./image/theme.png" alt="">
+                        <img src="./image/emoji.png" alt="">
                     </div>
                     <div class="options">
                         <p>Add to your post</p>
                         <div class="option">
                             <ul class="list">
-                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png" alt=""> </li> &nbsp;
-                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/b37mHA1PjfK.png" alt=""> </li> &nbsp;
-                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png" alt=""> </li> &nbsp;
-                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8zlaieBcZ72.png" alt=""> </li> &nbsp;
-                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/q7MiRkL7MLC.png" alt=""> </li>
-                                <li> <img height="22px"  src="./image/more.png" alt=""> </li>
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png" alt="">
+                                </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/b37mHA1PjfK.png" alt="">
+                                </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png" alt="">
+                                </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8zlaieBcZ72.png" alt="">
+                                </li> &nbsp;
+                                <li> <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/q7MiRkL7MLC.png" alt="">
+                                </li>
+                                <li> <img height="22px" src="./image/more.png" alt=""> </li>
                             </ul>
                         </div>
-                        
+
                     </div>
-                    <button class="buttton" >Post</button>
+                    <button onclick="gotoviewPost()" class="buttton">Post</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+<!-- after posting
+ -->
+
+    <div class="container1" id="container1">
+        <div class="wrapp">
+            <section class="post1">
+                <header class="head1">Facebook</header>
+                <form action="#">
+                    <div class="profile1">
+                        <img src="./image/profile.png" alt="">
+                        <div class="details1">
+                            <p class="name"> &nbsp; Abdul Rafay</p>
+                            <div class="privacy1">
+                                <span class="now" >Now. <i class="fa-solid fa-user-group" style="color: #56675a;"></i> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea class="posting" id="posting"></textarea><br><br><br>
+                    
+                    <div class="options1">
+                        
+                        <div class="like" id="like" onclick="likeButton()">
+                            <i class="fa-solid fa-thumbs-up"></i> &nbsp; Like
+                        </div>
+                        <div class="comment" id="comment " onclick="commentButton()">
+                            <i class="fa-solid fa-message"></i>&nbsp; Comment
+                        </div>
+                        <div class="share" id="share" onclick="shareButton()">
+                            <i class="fa-solid fa-share"></i>&nbsp; Share
+                        </div>
+                    </div>
+            
                 </form>
             </section>
         </div>

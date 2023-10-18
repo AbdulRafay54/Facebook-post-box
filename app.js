@@ -1,0 +1,22 @@
+function anyColor() {
+    let color = document.getElementById("textarea")
+    let colorPost = document.getElementById("posting")
+
+    let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    color.style.backgroundColor = "#" + randomColor
+    colorPost.innerHTML
+    colorPost.style.backgroundColor = "#" + randomColor
+}
+
+function likeButton() {
+    let like = document.getElementById("like")
+    like.style.color = "#1668cb"
+}
+
+function gotoviewPost() {
+    let container = document.getElementById("container")
+    let container1 = document.getElementById("container1")
+    container.style.display = "none"
+    container.style.display = "block"
+
+}

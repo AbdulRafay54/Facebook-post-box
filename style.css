@@ -1,13 +1,15 @@
-body{
-    
+body {
+
     display: flex;
     align-items: center;
     justify-content: center;
     height: 800px;
-    background:rgb(154, 154, 244) ;
+    background: rgb(154, 154, 244);
 }
 
-.container{
+.container {
+    display: block;
+    height:480px ;
     width: 500px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -15,38 +17,45 @@ body{
 }
 
 /*  */
-.container{
-    
-}
+/* .container {
+    display: none;
+} */
+
 /*  */
-.post header{
+.post header {
     font-size: 20px;
-    font-family:  Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     font-weight: 600;
     text-align: center;
     padding: 17px 0;
     border-bottom: 1px solid #bfbfbf;
 }
-.details p{
 
-    font-family:  Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
-    font-weight:600;
+.details p {
+
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
-.post form{
+
+.post form {
     margin: 20px 25px;
 }
-.post form .content{
+
+.post form .content {
     display: flex;
     align-items: center;
 }
-.post form .content .details{
+
+.post form .content .details {
     margin-left: 3px 0 0 12px;
 }
-form .content .details p{
+
+form .content .details p {
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
 }
-form .content .details .privacy{
+
+form .content .details .privacy {
     background-color: #e4e6eb;
     max-width: 98px;
     font-size: 11px;
@@ -56,79 +65,170 @@ form .content .details .privacy{
     cursor: pointer;
     justify-content: space-between;
 }
-.details .privacy span{
+
+.details .privacy span {
     font-size: 13px;
     margin-top: 1px;
     font-weight: 500;
 }
 
 .post form textarea {
-width: 100%;
-border: none;
-outline: none;
-resize: none;
-margin-top: 30px;
-min-height: 80px;
-font-size: 28px;
-font-family: inherit;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-top: 30px;
+    min-height: 80px;
+    font-size: 28px;
+    font-family: inherit;
 }
+
 .post form .emoji {
     display: flex;
     justify-content: space-between;
 }
-.post .emoji img{
+
+.post .emoji img {
     cursor: pointer;
 }
-.option{
- 
-  margin-bottom: 16px;
+
+.option {
+
+    margin-bottom: 16px;
 }
-.list{
-    
+
+.list {
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    margin: -33px  -15px;
+    margin: -33px -15px;
 }
-.list:hover{
+
+.list:hover {
     cursor: pointer;
 }
-form .options{
+
+form .options {
     height: 57px;
     border-radius: 7px;
     padding: 0 15px;
     margin: 15px 0px;
     border: 1px solid #b9b9b9;
 }
-form .options p{
+
+form .options p {
     font-size: 16px;
     font-weight: 600;
-    font-family:  Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
-form .options .list{
+
+form .options .list {
     display: flex;
     align-items: center;
     margin-left: 199px;
 }
-form .options .list li{
+
+form .options .list li {
     list-style: none;
     width: 40px;
-    
-   
+
+
 }
+
 .buttton{
+
     width: 450px;
     height: 40px;
     border-radius: 5px;
     color: #bcc0c4;
     border: none;
-    cursor: no-drop; 
+    cursor: no-drop;
     background-color: #e2e5e9;
 }
 
-form textarea:valid ~ button{
-    color:#fff ;
+form textarea:valid~button {
+    color: #fff;
     cursor: pointer;
-    background:#4599ff ;
+    background: #4599ff;
+}
+
+/* after posting */
+
+.container1 {
+
+    width: 500px;
+    height: 480px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.post1 header {
+    font-size: 20px;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 16px 0px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.details1 p {
+
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.head1 {
+   
+    font-weight: 600;
+    color: #1668cb;
+}
+
+.post1 form {
+    margin: 20px 25px;
+}
+
+.post1 form .profile1 {
+    display: flex;
+    align-items: center;
+}
+
+.privacy1 {
+    font-size: 12px;
+    padding-left: 9px;
+
+
+}
+
+.posting {
+    height: 200px;
+    width: 390px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: none;
+
+}
+
+.options1 {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.like:hover {
+    cursor: pointer;
+}
+
+.share:hover {
+    cursor: pointer;
+}
+
+.comment :hover {
+    cursor: pointer;
 }
