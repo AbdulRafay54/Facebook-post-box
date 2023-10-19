@@ -6,6 +6,8 @@ function anyColor() {
     color.style.backgroundColor = "#" + randomColor
     colorPost.innerHTML
     colorPost.style.backgroundColor = "#" + randomColor
+    colorPost.style.textAlign ="center"
+    colorPost.style.fontSize = "28px"
 }
 
 function likeButton() {
@@ -17,6 +19,11 @@ function gotoviewPost() {
     let container = document.getElementById("container")
     let container1 = document.getElementById("container1")
     container.style.display = "none"
-    container.style.display = "block"
+    container1.style.display = "block"
+    container.style.height = ""
+    let contValue = document.getElementById("textarea") 
+    let contValue1 =  document.getElementById("posting")
+    contValue1.innerHTML = contValue.value
+
 
 }
